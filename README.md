@@ -12,7 +12,33 @@ cd DOC-LAB-8-HOSTING-STATIC-WEBSITE
 ```bash
 docker build -t gym .
 ```
-# Step 5: Run Docker Container
+# Step 4: Run Docker Container
 ```bash
 docker run -d -p 2000:80 --name gym-container gym
+```
+# Step 5: Check Running Containers 
+```bash
+docker ps
+```
+# Step 6: Open Website
+```bash
+http://localhost:2000
+```
+# Optional Commands
+
+Stop Container
+```bash
+docker stop gym-container
+```
+Start Container Again
+```bash
+docker start gym-container
+```
+Remove Container
+```bash
+docker rm -f gym-container
+```
+Check Logs
+```bash
+docker logs gym-container
 ```
